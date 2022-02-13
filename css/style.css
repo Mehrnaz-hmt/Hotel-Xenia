@@ -1,0 +1,228 @@
+.container-black-calender-box {
+  width: 85vw;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #111118;
+}
+.container-black-calender-box .container-p-inputdate {
+  margin-top: 2%;
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.container-black-calender-box .container-p-inputdate .container-p-input {
+  height: 100%;
+  width: auto;
+}
+.container-black-calender-box .container-p-inputdate .container-p-input p {
+  font-size: small;
+  color: #f4f4f4;
+  text-align: center;
+  font-weight: lighter;
+}
+.container-black-calender-box .container-p-inputdate .container-p-input input {
+  border: none;
+  width: 400px;
+  height: 80px;
+  color: #f4f4f4;
+  background-color: #1F1F2C;
+  font-size: larger;
+  text-align: center;
+  padding: 15px;
+}
+.container-black-calender-box .container-p-inputdate .container-p-input input:hover {
+  cursor: text;
+}
+.container-black-calender-box .request-quote-btn {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 3% 3%;
+}
+.container-black-calender-box .request-quote-btn button {
+  background-color: #111118;
+  border: 1px solid #6FB586;
+  height: 65px;
+  font-size: small;
+  color: #6FB586;
+  padding: 2px;
+  width: 20%;
+}
+.container-black-calender-box .request-quote-btn button:hover {
+  cursor: pointer;
+}
+
+/* remove the list styles, width : item width * total items */
+/* Styling for prev and next buttons */
+#carousel {
+  width: 255px;
+  margin: 0 auto;
+}
+
+#slides {
+  overflow: hidden;
+  position: relative;
+  width: 250px;
+}
+#slides ul {
+  position: relative;
+  left: 0;
+  top: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 750px;
+  border: none;
+}
+#slides ul li {
+  width: 250px;
+  float: left;
+  border: none;
+}
+#slides li img {
+  padding: 5px;
+  object-fit: contain;
+}
+
+#buttons {
+  padding: 0 0 5px 0;
+  float: right;
+}
+#buttons a {
+  display: block;
+  width: 31px;
+  text-indent: -999em;
+  float: left;
+  outline: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.drawer-nav {
+  background: black;
+}
+.drawer-nav ul li {
+  display: inline-block;
+}
+.drawer-nav ul li a {
+  color: #e7e7e7;
+  font-size: smaller;
+}
+
+.vertical-line {
+  display: inline-block;
+  border-left: 1px solid #fffefe;
+  margin: 0 20px;
+  height: 100px;
+}
+
+html {
+  color: #2a2a2a;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: "roboto";
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: "roboto";
+}
+
+#slider {
+  margin-top: 0;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  background: #ccc;
+  text-align: center;
+}
+
+a.control_prev {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+  border-radius: 0 2px 2px 0;
+}
+a.control_prev:hover {
+  opacity: 1;
+  -webkit-transition: all 1s ease;
+}
+
+a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 1s ease;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
+.transparent-menu {
+  background-color: grey;
+  opacity: 1;
+}
+.transparent-menu .logo-menu a img {
+  object-fit: contain;
+  max-width: 190px;
+  height: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

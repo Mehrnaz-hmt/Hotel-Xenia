@@ -1,0 +1,18 @@
+$color_pallets:(success:#6FB586 ,warning:#f90 ,danger:#ff5600,light:#f4f4f4,muted:#333,darkpurple:#1F1F2C);
+$font-family-base:'serif';
+// font-size-base:"16px";
+$line-height-base:1.5;
+$font-weight-base:700;
+$body-color:#323232;
+$black-box-calender:#111118;
+$dark-purple:map-get($color_pallets,'darkpurple');
+$body-bg:map-get($color_pallets,'light');
+$dt-font-weight:400;
+$link-color:map-get($color-pallets,'light');
+$link-hover-color:map-get($color_pallets,'success');
+$link-hover-decoration:none;
+$link-decoration:none;
+$table-cell-padding:7px;
+$table-bg:$body-bg;
+$text-muted:map-get($color_pallets,'muted');
+$cursor-disabled:disabled;

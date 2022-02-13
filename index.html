@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Hotel Xenia</title>
+
+    <link
+      href="http://www.jqueryscript.net/css/jquerysctipttop.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    <!-- <script
+      type="text/javascript"
+      src="http://pagead2.googlesyndication.com/pagead/show_ads.js"
+    ></script> -->
+
+    <div class="jquery-script-clear"></div>
+
+    <div id="slider">
+      <div class="transparent-menu">
+        <div class="logo-menu">
+          <a href="#"
+            ><img src="Assetes/images/logo-white.webp" alt="logo"
+          /></a>
+        </div>
+      </div>
+
+      <a href="#" class="control_next">&gt;</a>
+      <a href="#" class="control_prev">&lt;</a>
+      <ul>
+        <li
+          ><img
+            style="width: 100%; height: 650px"
+            src="Assetes/images/slider_n_1.jpg"
+        /></li>
+        <li
+          ><img
+            style="width: 100%; height: 650px"
+            src="Assetes/images/slide_n_2_o.jpg"
+        /></li>
+        <li
+          ><img style="width: 100%; height: 650px" src="Assetes/images/spa.jpg"
+        /></li>
+      </ul>
+    </div>
+
+    <div class="slider_option">
+      <input type="checkbox" id="checkbox" />
+      <label for="checkbox">Autoplay Mode</label>
+    </div>
+<!--black-calender-box-->
+<div class="container-black-calender-box">
+  <div class="container-p-inputdate">
+    <div class="container-p-input">
+      <p>Check In Date</p>
+      <input type="date" name="input-arrival-date" class="date-input" id="inputCheckIn" placeholder="Select arival date">
+    </div>
+    <div>
+      <div class="container-p-input">
+        <p>Check Out Date</p>
+        <input type="date" name="input-arrival-date" class="date-input" id="inputCheckOut" placeholder="Select Departure Date">
+      </div>
+    </div>
+  </div>
+  <div class="request-quote-btn">
+    <button type="submit">REQUEST A QUOTE</button>
+  </div>
+</div>
+<!--End-black-calender-box-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(["_setAccount", "UA-36251023-1"]);
+      _gaq.push(["_setDomainName", "jqueryscript.net"]);
+      _gaq.push(["_trackPageview"]);
+
+      (function () {
+        var ga = document.createElement("script");
+        ga.type = "text/javascript";
+        ga.async = true;
+        ga.src =
+          ("https:" == document.location.protocol
+            ? "https://ssl"
+            : "http://www") + ".google-analytics.com/ga.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <script src="Assetes/Javascript/script.js"></script>
+  </body>
+</html>
