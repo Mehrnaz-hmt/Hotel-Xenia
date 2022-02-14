@@ -1,9 +1,62 @@
+/* CSS reset */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+input {
+  border: 1px solid #b0b0b0;
+  padding: 3px 5px 4px;
+  color: #979797;
+  width: 190px;
+}
+
+address, caption, cite, code, dfn, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+caption, th {
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before, q:after {
+  content: "";
+}
+
+abbr, acronym {
+  border: 0;
+}
+
 .container-black-calender-box {
   width: 85vw;
   height: auto;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 10%;
+  margin-bottom: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +77,7 @@
 }
 .container-black-calender-box .container-p-inputdate .container-p-input p {
   font-size: small;
-  color: #f4f4f4;
+  color: #F4F4F4;
   text-align: center;
   font-weight: lighter;
 }
@@ -32,9 +85,10 @@
   border: none;
   width: 400px;
   height: 80px;
-  color: #f4f4f4;
+  color: #F4F4F4;
   background-color: #1F1F2C;
-  font-size: larger;
+  font-size: xx-large;
+  font-weight: bolder;
   text-align: center;
   padding: 15px;
 }
@@ -61,8 +115,144 @@
   cursor: pointer;
 }
 
+.welcome-container-box {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.welcome-container-box .welcome-space-handler {
+  width: auto;
+  height: auto;
+}
+.welcome-container-box .welcome-space-handler .welcome-title-box {
+  position: relative;
+}
+.welcome-container-box .welcome-space-handler .welcome-title-box .welcome-title {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+  font-size: 165px;
+  color: #dfdddd;
+}
+.welcome-container-box .welcome-space-handler .welcome-title-box h2 {
+  font-size: 44px;
+  line-height: 44px;
+  color: #323232;
+  font-weight: 700;
+  text-align: center;
+  position: absolute;
+  top: 70px;
+  left: 250px;
+}
+.welcome-container-box .welcome-space-handler .welcome-title-box .welcome-parag {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #918e8e;
+  text-align: center;
+  position: absolute;
+  top: 125px;
+  left: 250px;
+}
+.welcome-container-box .logo {
+  width: 100%;
+  text-align: center;
+}
+
+.provinding {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+.provinding .container-provinding {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.provinding .container-provinding .provinding-title {
+  font-size: 20px;
+  color: #323232;
+  line-height: 22px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2%;
+}
+.provinding .container-provinding .provinding-paragraph {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 27px;
+  color: #918e8e;
+  text-align: center;
+}
+
+.avatar-circle-container-box {
+  width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  margin-bottom: 2%;
+  height: 20vh;
+}
+.avatar-circle-container-box .avatar-circle-container {
+  height: 100%;
+}
+.avatar-circle-container-box .avatar-circle-container .avatar-circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 27px;
+  color: #918e8e;
+  text-align: center;
+}
+.avatar-circle-container-box .avatar-circle-container .avatar-circle .circle {
+  line-height: 0;
+  /* remove line-height */
+  display: inline-block;
+  /* circle wraps image */
+  margin: 5px;
+  border: 4px solid rgba(200, 200, 200, 0.4);
+  border-radius: 50%;
+  /* relative value */
+  height: 70px;
+  width: 70px;
+}
+.avatar-circle-container-box .avatar-circle-container .avatar-circle .richard {
+  font-size: 13px;
+  line-height: 19px;
+}
+.avatar-circle-container-box .avatar-circle-container .avatar-circle .circle img {
+  border-radius: 50%;
+  /* relative value for   adjustable image size */
+  height: 70px;
+  width: 70px;
+}
+
 /* remove the list styles, width : item width * total items */
 /* Styling for prev and next buttons */
+body {
+  box-sizing: border-box;
+  font-family: "sans serif";
+  background-color: #F4F4F4;
+}
+
 #carousel {
   width: 255px;
   margin: 0 auto;

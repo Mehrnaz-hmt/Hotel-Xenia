@@ -1,9 +1,15 @@
-// @import "reset";
+@import "reset";
 @import "variable";
-@import "calender-box";
+@import "calender-black-box";
+@import "welcome-box";
 // @import url(http://fonts.googleapis.com/css?family=roboto:400,300,600);
 /* remove the list styles, width : item width * total items */
 /* Styling for prev and next buttons */
+body {
+  box-sizing: border-box;
+  font-family: $font-family-base;
+  background-color: $body-bg;
+}
 #carousel {
   width: 255px;
   // height: 290px;
