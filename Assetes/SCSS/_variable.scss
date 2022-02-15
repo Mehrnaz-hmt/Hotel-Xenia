@@ -45,6 +45,7 @@ $line-height-parag:27px;
     font-size:$font-size-parag;
     font-weight: $font-weight-parag;
     line-height:$line-height-parag;
+    color: $text-grey;
 }
 
 @mixin unselectable-text {
