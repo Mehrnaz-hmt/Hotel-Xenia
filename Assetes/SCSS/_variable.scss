@@ -1,5 +1,5 @@
 //color pallets 
-$color_pallets:(success:#6FB586 ,warning:#f90 ,danger:#ff5600,light:#F4F4F4,muted:#333,darkpurple:#1F1F2C,lightgry:rgb(223, 221, 221),slidercolor:#171720,darksuccess:#498f60);
+$color_pallets:(success:#6FB586 ,warning:#f90 ,danger:#ff5600,light:#F4F4F4,muted:#333,darkpurple:#1F1F2C,lightgry:rgb(223, 221, 221),slidercolor:#171720,darksuccess:#498f60,yellow-green:rgb(165, 226, 24));
 $body-color:#323232;
 $button-hover:map-get($color_pallets,'darksuccess');
 $black-box-calender:#111118;
@@ -11,6 +11,7 @@ $text-muted:map-get($color_pallets,'muted');
 $text-ligtgrey:map-get($color_pallets,'lightgry');
 $text-grey:rgb(145, 142, 142);
 $slider-color:map-get($color_pallets,'slidercolor');
+$yellow-green:map-get($color_pallets,'yellow-green');
 //fonts variables
 $font-size-verybold:165px;
 $font-size-h2:44px;

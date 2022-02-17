@@ -14,6 +14,8 @@
 /* remove the list styles, width : item width * total items */
 /* Styling for prev and next buttons */
 body {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
   font-family: $font-family-base;
   background-color: $body-bg;
@@ -169,8 +171,8 @@ a.control_next {
 }
 
 .transparent-menu {
-	background-color: grey;
-	opacity:1;
+	background-color:rgba($color: #000000, $alpha: 0.5);
+	opacity:0.5;
 	.logo-menu a img{
 		object-fit: contain;
 		max-width:190px;
