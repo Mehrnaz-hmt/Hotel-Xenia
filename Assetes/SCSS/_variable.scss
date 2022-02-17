@@ -1,6 +1,7 @@
 //color pallets 
-$color_pallets:(success:#6FB586 ,warning:#f90 ,danger:#ff5600,light:#F4F4F4,muted:#333,darkpurple:#1F1F2C,lightgry:rgb(223, 221, 221));
+$color_pallets:(success:#6FB586 ,warning:#f90 ,danger:#ff5600,light:#F4F4F4,muted:#333,darkpurple:#1F1F2C,lightgry:rgb(223, 221, 221),slidercolor:#171720,darksuccess:#498f60);
 $body-color:#323232;
+$button-hover:map-get($color_pallets,'darksuccess');
 $black-box-calender:#111118;
 $dark-purple:map-get($color_pallets,'darkpurple');
 $body-bg:map-get($color_pallets,'light');
@@ -9,6 +10,7 @@ $link-hover-color:map-get($color_pallets,'success');
 $text-muted:map-get($color_pallets,'muted');
 $text-ligtgrey:map-get($color_pallets,'lightgry');
 $text-grey:rgb(145, 142, 142);
+$slider-color:map-get($color_pallets,'slidercolor');
 //fonts variables
 $font-size-verybold:165px;
 $font-size-h2:44px;
@@ -56,3 +58,28 @@ $line-height-parag:27px;
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
 } 
+//room slider mixins
+@mixin title-black-rooms-slider {
+font-size: $font-size-banner;
+font-style: normal;
+font-weight:$font-weight-base;
+line-height: 33px;
+color: $body-bg;
+}
+
+@mixin top-paragraph {
+    font-size: 13px;
+    line-height: 20px;
+    color: #ffff;
+    font-weight:100;
+    font-style: normal;
+    
+}
+
+@mixin buttom-parargraph {
+    font-size: 17px;
+    line-height: 24px;
+    color: #ffff;
+    font-weight:200;
+    font-style: normal;
+}
