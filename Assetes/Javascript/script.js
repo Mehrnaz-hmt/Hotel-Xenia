@@ -73,4 +73,23 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "flex";  
   dots[slideIndex-1].className += " active";
 }
-//--------------Navbar
+//--------------when scroll animation show again 
+
+
+
+
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+    const firstP = entry.target.querySelectorAll('.first-p');;
+    const secondP = entry.target.querySelectorAll('.second-p');
+      if (entry.isIntersecting) {
+        secondP.classList.add('anim-lineUp');
+        return; // if we added the class, exit the function
+      }
+      // We're not intersecting, so remove the class!
+      secondP.classList.remove('anim-lineUp');
+    });
+  });
+  
+  observer.observe(document.querySelector('.second-p'));

@@ -13,8 +13,6 @@
   <body>
    
 
-
-
     <div id="slider" class="transparent-slider">
       <div class="transparent-menu">
         <div class="logo-menu">
@@ -32,9 +30,16 @@
           <div><a href="#"><span>CONTACT</span></a></div>
           <div><a href="#"><span>MORE</span></a></div>
         </div>
+        
         <div class="button-menu">
-          <button class="book-now-btn">BOOK NOW!</button>
+          <div class="book-now-btn">
+            <a href="#">BOOK NOW!</a>
+            <div class="book-now-btn-child">
+            </div>
+          </div>
         </div>
+      
+         
       </div>
 
       <a href="#" class="control_next">&gt;</a>
@@ -45,26 +50,40 @@
             style="width: 100%; height: 650px"
             src="Assetes/images/slider_n_1.jpg"
           />
+          <p class="first-p">INDOOR & OUTDOOR</p>
+          <p class="second-p">ENJOY A LUXURY EXPERIENCE</p>
+
+          <!-- <div class="rooms-and-suites-btn-conatiner">
+            <div class="rooms-and-suites-btn">
+                <a class="btn-rooms-and-suits" href="#">ROOMS & SUITS</a>
+                <div class="child-rooms-and-suits-slideUp"></div>
+            </div>
+            </div> -->
         </li>
         <li>
           <img
             style="width: 100%; height: 650px"
             src="Assetes/images/slide_n_2_o.jpg"
           />
+          <p class="first-p">WILD BEAUTY</p>
+          <p class="second-p">IN THE PERFECT LOCATION</p>
         </li>
         <li>
           <img
             style="width: 100%; height: 650px"
             src="Assetes/images/spa.jpg"
           />
+          <p class="first-p">RELAX & REJYVENATE</p>
+          <p id="spa-slaon-p" class="spa-salon-p">WITH SPA SALON</p>
         </li>
       </ul>
+      
     </div>
 
-    <div class="slider_option">
+    <!-- <div class="slider_option">
       <input type="checkbox" id="checkbox" />
       <label for="checkbox">Autoplay Mode</label>
-    </div>
+    </div> -->
     <!--black-calender-box-->
     <div class="container-black-calender-box">
       <div class="container-p-inputdate">
@@ -91,9 +110,12 @@
           </div>
         </div>
       </div>
-      <div class="request-quote-btn">
-        <button type="submit">REQUEST A QUOTE</button>
-      </div>
+      <div class="request-quote-btn-conatiner">
+        <div class="request-quote-btn">
+            <a class="btn-req-quote" href="#">REQUEST A QUOTE</a>
+            <div class="child-animation-slideUp"></div>
+        </div>
+        </div>
     </div>
     <!--End-black-calender-box-->
 
@@ -255,8 +277,17 @@
           Book your stay online and secure your summer vacations on time with an
           amazing discount!
         </p>
+<!-- 
+      <div class="off-btn"><a href="#">VIEW OUR ROOMS</a>
 
-        <input class="off-btn" type="button" value="VIEW OUR ROOMS" />
+        <div class="inside-off-btn"></div>
+      </div> -->
+      <div class="view-our-rooms-btn-container">
+        <div class="view-our-rooms-btn">
+            <a class="btn-view-rooms" href="#">VIEW OUR ROOMS</a>
+            <div class="child-view-rooms-btn-slideUp"></div>
+        </div>
+        </div>
       </div>
     </div>
     <!--End off box-->

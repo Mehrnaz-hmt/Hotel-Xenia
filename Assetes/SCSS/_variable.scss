@@ -1,5 +1,5 @@
 //color pallets 
-$color_pallets:(success:#6FB586 ,warning:#f90 ,danger:#ff5600,light:#F4F4F4,muted:#333,darkpurple:#1F1F2C,lightgry:rgb(223, 221, 221),slidercolor:#171720,darksuccess:#498f60,yellow-green:rgb(165, 226, 24));
+$color_pallets:(success:#6FB586 ,warning:#f90 ,danger:#ff5600,light:#ffffff,muted:#333,darkpurple:#1F1F2C,lightgry:rgb(223, 221, 221),slidercolor:#171720,darksuccess:#498f60,yellow-green:rgb(169, 241, 1));
 $body-color:#323232;
 $button-hover:map-get($color_pallets,'darksuccess');
 $black-box-calender:#111118;
@@ -84,3 +84,49 @@ color: $body-bg;
     font-weight:200;
     font-style: normal;
 }
+
+
+// Mixin for button animations
+@mixin btn-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 3% 3%;
+    
+  }
+  @mixin insideContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $text-muted;
+    height: 40px;
+    width: 180px;
+  }
+  @mixin ancherElement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: small;
+    text-decoration: none;
+    z-index: 199999;
+    color: $text-muted;
+    padding: 2px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  @mixin childElement {
+    position: absolute;
+    width: 100%;
+    transition: 0.5s ease;
+    height: 0;
+    bottom: 0;
+    background-color:$text-muted;
+  }
+
+  

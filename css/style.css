@@ -1,6 +1,7 @@
 /* CSS reset */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,500;1,300;1,600;1,800;1,900&family=Poppins:ital,wght@0,200;0,300;0,900;1,600;1,900&family=Raleway:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,500;1,300;1,600;1,800;1,900&family=Poppins:ital,wght@0,200;0,300;0,900;1,600;1,900&family=Raleway:wght@600&family=Source+Sans+Pro:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
   margin: 0;
   padding: 0;
@@ -181,13 +182,14 @@ body {
 }
 .transparent-slider .transparent-menu {
   width: 100vw;
+  height: 15vh;
   position: absolute;
   top: 50;
   z-index: 119999;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .transparent-slider .transparent-menu .logo-menu {
   margin-left: 1%;
@@ -204,7 +206,7 @@ body {
   text-decoration: none;
 }
 .transparent-slider .transparent-menu .element-center-items div a span {
-  color: #F4F4F4;
+  color: #ffffff;
   font-size: 14px;
   font-weight: 500;
   line-height: 14px;
@@ -212,19 +214,153 @@ body {
   margin: 20px;
   font-family: "Nunito", sans-serif;
 }
-.transparent-slider .button-menu .book-now-btn {
-  width: 130px;
-  height: 40px;
-  background-color: #a5e218;
+.transparent-slider .book-now-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #a9f101;
   padding: 7px;
-  margin-right: 10%;
   border: none;
-  color: #fff;
+  cursor: pointer;
+  width: 130px;
+  height: 30px;
+  position: relative;
+}
+.transparent-slider .book-now-btn a {
+  color: #ffffff;
   font-weight: bold;
+  text-decoration: none;
+}
+.transparent-slider .book-now-btn:hover a {
+  z-index: 1999999999999;
+  color: white;
+}
+.transparent-slider .book-now-btn:hover .book-now-btn-child {
+  height: 100%;
+}
+.transparent-slider .book-now-btn .book-now-btn-child {
+  background-color: #fffff9;
+  position: absolute;
+  right: 1px;
+  transition: 0.5s ease;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  z-index: 1999999999999;
+}
+.transparent-slider ul li .first-p {
+  animation: 2s anim-lineUp ease-out infinite;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  display: inline-block;
+  position: absolute;
+  font-family: "Playfair Display", serif;
+  color: azure;
+  font-size: x-large;
+  right: 560px;
+  top: 150px;
+  letter-spacing: 6px;
+  font-size: 20px;
+}
+.transparent-slider ul li .second-p {
+  animation: 2s anim-lineUp ease-out infinite;
+  animation-iteration-count: 1;
+  display: inline-block;
+  position: absolute;
+  font-family: "Playfair Display", serif;
+  color: azure;
+  font-size: 100px;
+  font-weight: 700;
+  right: 80px;
+  top: 190px;
+  letter-spacing: 6px;
+}
+.transparent-slider ul li .spa-salon-p {
+  animation: 2s anim-lineUp ease-out;
+  animation-fill-mode: forwards;
+  display: inline-block;
+  position: absolute;
+  font-family: "Playfair Display", serif;
+  color: azure;
+  font-size: 100px;
+  font-weight: 700;
+  right: 210px;
+  top: 190px;
+  letter-spacing: 6px;
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.rooms-and-suites-btn-conatiner {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 3% 3%;
+  position: relative;
+  top: 50px;
+}
+.rooms-and-suites-btn-conatiner .rooms-and-suites-btn {
+  position: relative;
+  display: flex;
+  height: 35px;
+  width: 190px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #6FB586;
+}
+.rooms-and-suites-btn-conatiner .rooms-and-suites-btn:hover .child-animation-slideUp {
+  height: 100%;
+}
+.rooms-and-suites-btn-conatiner .rooms-and-suites-btn:hover .child-rooms-and-suits-slideUp {
+  color: #f8f8f8;
+}
+.rooms-and-suites-btn-conatiner .rooms-and-suites-btn .child-rooms-and-suits-slideUp {
+  position: absolute;
+  width: 100%;
+  background-color: #6FB586;
+  transition: 0.5s ease;
+  height: 0;
+  bottom: 0;
+}
+
+.btn-rooms-and-suits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: small;
+  text-decoration: none;
+  color: #6FB586;
+  padding: 2px;
+  z-index: 199999;
+}
+.btn-rooms-and-suits:hover {
   cursor: pointer;
 }
 
 .container-black-calender-box {
+  position: absolute;
+  top: 15%;
+  left: 8%;
+  z-index: 199999999999;
   width: 85vw;
   height: auto;
   margin-right: auto;
@@ -249,8 +385,9 @@ body {
   width: auto;
 }
 .container-black-calender-box .container-p-inputdate .container-p-input p {
+  margin-bottom: 2%;
   font-size: small;
-  color: #F4F4F4;
+  color: #ffffff;
   text-align: center;
   font-weight: lighter;
 }
@@ -258,7 +395,7 @@ body {
   border: none;
   width: 400px;
   height: 80px;
-  color: #F4F4F4;
+  color: #ffffff;
   background-color: #1F1F2C;
   font-size: xx-large;
   font-weight: bolder;
@@ -268,27 +405,56 @@ body {
 .container-black-calender-box .container-p-inputdate .container-p-input input:hover {
   cursor: text;
 }
-.container-black-calender-box .request-quote-btn {
+
+.request-quote-btn-conatiner {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   margin: 3% 3%;
 }
-.container-black-calender-box .request-quote-btn button {
-  background-color: #111118;
-  border: 1px solid #6FB586;
-  height: 65px;
+.request-quote-btn-conatiner .request-quote-btn {
+  position: relative;
+  display: flex;
+  height: 35px;
+  width: 190px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #6FB586;
+}
+.request-quote-btn-conatiner .request-quote-btn:hover .child-animation-slideUp {
+  height: 100%;
+}
+.request-quote-btn-conatiner .request-quote-btn:hover .btn-req-quote {
+  color: #f8f8f8;
+}
+.request-quote-btn-conatiner .request-quote-btn .child-animation-slideUp {
+  position: absolute;
+  width: 100%;
+  background-color: #6FB586;
+  transition: 0.5s ease;
+  height: 0;
+  bottom: 0;
+}
+
+.btn-req-quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   font-size: small;
+  text-decoration: none;
   color: #6FB586;
   padding: 2px;
-  width: 20%;
+  z-index: 199999;
 }
-.container-black-calender-box .request-quote-btn button:hover {
+.btn-req-quote:hover {
   cursor: pointer;
 }
 
 .welcome-container-box {
+  margin-top: 18%;
   width: 100vw;
   height: auto;
   display: flex;
@@ -471,7 +637,7 @@ body {
 }
 .cards-container .cards p {
   font-size: 30px;
-  color: #F4F4F4;
+  color: #ffffff;
   position: absolute;
   bottom: 5%;
   left: 5%;
@@ -511,13 +677,52 @@ body {
   margin-top: 2%;
   margin-bottom: 2%;
 }
-.off-box-container .off-box-sapce-handler .off-btn {
-  border: 0.5px solid black;
-  padding: 9px;
-  width: 20%;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
+
+.view-our-rooms-btn-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 3% 3%;
+}
+.view-our-rooms-btn-container .view-our-rooms-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #333;
+  height: 40px;
+  width: 180px;
+}
+.view-our-rooms-btn-container .view-our-rooms-btn:hover .child-view-rooms-btn-slideUp {
+  height: 100%;
+}
+.view-our-rooms-btn-container .view-our-rooms-btn:hover .btn-view-rooms {
+  color: #f8f8f8;
+}
+.view-our-rooms-btn-container .view-our-rooms-btn .child-view-rooms-btn-slideUp {
+  position: absolute;
+  width: 100%;
+  transition: 0.5s ease;
+  height: 0;
+  bottom: 0;
+  background-color: #333;
+}
+
+.btn-view-rooms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: small;
+  text-decoration: none;
+  z-index: 199999;
+  color: #333;
+  padding: 2px;
+}
+.btn-view-rooms:hover {
+  cursor: pointer;
 }
 
 .room-slider-black-box-container {
@@ -554,7 +759,7 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 33px;
-  color: #F4F4F4;
+  color: #ffffff;
 }
 .room-slider-black-box-container .inside-room-slider-black-box .text-box-room-slider .text-box-room-slider-space-handler .room-slider-p1 {
   font-size: 13px;
@@ -784,7 +989,7 @@ li {
   font-size: 16px;
   line-height: 24px;
   font-weight: 200;
-  color: #F4F4F4;
+  color: #ffffff;
 }
 
 .footer-buttom {
@@ -831,12 +1036,18 @@ li {
 
 /* remove the list styles, width : item width * total items */
 /* Styling for prev and next buttons */
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  position: relative;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "sans serif";
-  background-color: #F4F4F4;
+  background-color: #ffffff;
 }
 
 #carousel {
