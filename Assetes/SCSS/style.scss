@@ -5,183 +5,183 @@
 @import "welcome-box";
 @import "cards";
 @import "off-box";
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,500;1,300;1,600;1,800;1,900&family=Poppins:ital,wght@0,200;0,300;0,900;1,600;1,900&family=Raleway:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,500;1,300;1,600;1,800;1,900&family=Poppins:ital,wght@0,200;0,300;0,900;1,600;1,900&family=Raleway:wght@600&display=swap");
 @import "room-slider";
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,500;1,300;1,600;1,800;1,900&family=Poppins:ital,wght@0,200;0,300;0,900;1,600;1,900&family=Raleway:wght@600&family=Source+Sans+Pro:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,500;1,300;1,600;1,800;1,900&family=Poppins:ital,wght@0,200;0,300;0,900;1,600;1,900&family=Raleway:wght@600&family=Source+Sans+Pro:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import "testimonials";
 @import "footer";
-
+@import "table";
 /* remove the list styles, width : item width * total items */
 /* Styling for prev and next buttons */
-html{
-  margin: 0;
-  padding: 0;
+html {
+	margin: 0;
+	padding: 0;
 }
 body {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: $font-family-base;
-  background-color: $body-bg;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: $font-family-base;
+	background-color: $body-bg;
 }
 #carousel {
-  width: 255px;
-  // height: 290px;
-  margin: 0 auto;
+	width: 255px;
+	// height: 290px;
+	margin: 0 auto;
 }
 #slides {
-  overflow: hidden;
-  position: relative;
-  width: 250px;
-  // height: 250px;
-  ul {
-    position: relative;
-    left: 0;
-    top: 0;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 750px;
-    border: none;
-    li {
-      width: 250px;
-      // height: 250px;
-      float: left;
-      border: none;
-    }
-  }
-  li {
-    img {
-      padding: 5px;
-      object-fit: contain;
-    }
-  }
+	overflow: hidden;
+	position: relative;
+	width: 250px;
+	// height: 250px;
+	ul {
+		position: relative;
+		left: 0;
+		top: 0;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		width: 750px;
+		border: none;
+		li {
+			width: 250px;
+			// height: 250px;
+			float: left;
+			border: none;
+		}
+	}
+	li {
+		img {
+			padding: 5px;
+			object-fit: contain;
+		}
+	}
 }
 #buttons {
-  padding: 0 0 5px 0;
-  float: right;
-  a {
-    display: block;
-    width: 31px;
-    // height: 32px;
-    text-indent: -999em;
-    float: left;
-    outline: 0;
-  }
+	padding: 0 0 5px 0;
+	float: right;
+	a {
+		display: block;
+		width: 31px;
+		// height: 32px;
+		text-indent: -999em;
+		float: left;
+		outline: 0;
+	}
 }
 .clear {
-  clear: both;
+	clear: both;
 }
-.drawer-nav {
-  background: black;
-  ul {
-    li {
-      display: inline-block;
-      a {
-        color: #e7e7e7;
-        font-size: smaller;
-      }
-    }
-  }
-}
+// .drawer-nav {
+// 	background: rgb(255, 255, 255);
+// 	ul {
+// 		li {
+// 			display: inline-block;
+// 			a {
+// 				color: #e7e7e7;
+// 				font-size: smaller;
+// 			}
+// 		}
+// 	}
+// }
 .vertical-line {
-  display: inline-block;
-  border-left: 1px solid #fffefe;
-  margin: 0 20px;
-  height: 100px;
+	display: inline-block;
+	border-left: 1px solid #fffefe;
+	margin: 0 20px;
+	height: 100px;
 }
 html {
-  color: #2a2a2a;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-  font-family: "roboto";
+	color: #2a2a2a;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	font-family: "roboto";
 }
 body {
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-  font-family: "roboto";
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	font-family: "roboto";
 }
 #slider {
-  margin-top: 0;
-  width: 100vw;
-  // height: 300px;
-  position: relative;
-  overflow: hidden;
-  ul {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    li {
-      position: relative;
-      display: block;
-      float: left;
-      margin: 0;
-      padding: 0;
-      width: 100vw;
-      background: #ccc;
-      text-align: center;
-    }
-  }
+	margin-top: 0;
+	width: 100vw;
+	// height: 300px;
+	position: relative;
+	overflow: hidden;
+	ul {
+		position: relative;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li {
+			position: relative;
+			display: block;
+			float: left;
+			margin: 0;
+			padding: 0;
+			width: 100vw;
+			background: #ccc;
+			text-align: center;
+		}
+	}
 }
 a.control_prev {
-  position: absolute;
-  top: 40%;
-  z-index: 999;
-  display: block;
-  padding: 4% 3%;
-  width: auto;
-  background: #2a2a2a;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 18px;
-  opacity: 0.8;
-  cursor: pointer;
-  border-radius: 0 2px 2px 0;
-  &:hover {
-    opacity: 1;
-    -webkit-transition: all 1s ease;
-  }
+	position: absolute;
+	top: 40%;
+	z-index: 999;
+	display: block;
+	padding: 4% 3%;
+	width: auto;
+	background: #2a2a2a;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 18px;
+	opacity: 0.8;
+	cursor: pointer;
+	border-radius: 0 2px 2px 0;
+	&:hover {
+		opacity: 1;
+		-webkit-transition: all 1s ease;
+	}
 }
 a.control_next {
-  position: absolute;
-  top: 40%;
-  z-index: 999;
-  display: block;
-  padding: 4% 3%;
-  width: auto;
-  background: #2a2a2a;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 18px;
-  opacity: 0.8;
-  cursor: pointer;
-  right: 0;
-  border-radius: 2px 0 0 2px;
-  &:hover {
-    opacity: 1;
-    -webkit-transition: all 1s ease;
-  }
+	position: absolute;
+	top: 40%;
+	z-index: 999;
+	display: block;
+	padding: 4% 3%;
+	width: auto;
+	background: #2a2a2a;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 18px;
+	opacity: 0.8;
+	cursor: pointer;
+	right: 0;
+	border-radius: 2px 0 0 2px;
+	&:hover {
+		opacity: 1;
+		-webkit-transition: all 1s ease;
+	}
 }
 .slider_option {
-  position: relative;
-  margin: 10px auto;
-  width: 160px;
-  font-size: 18px;
+	position: relative;
+	margin: 10px auto;
+	width: 160px;
+	font-size: 18px;
 }
 
 .transparent-menu {
-	background-color:rgba($color: #000000, $alpha: 0.5);
-	opacity:0.5;
-	.logo-menu a img{
+	background-color: rgba($color: #000000, $alpha: 0.5);
+	opacity: 0.5;
+	.logo-menu a img {
 		object-fit: contain;
-		max-width:190px;
+		max-width: 190px;
 		height: auto;
 	}
 }

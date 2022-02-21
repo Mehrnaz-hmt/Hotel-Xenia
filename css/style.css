@@ -393,17 +393,23 @@ body {
 }
 .container-black-calender-box .container-p-inputdate .container-p-input input {
   border: none;
-  width: 400px;
+  width: 200px;
   height: 80px;
   color: #ffffff;
   background-color: #1F1F2C;
-  font-size: xx-large;
+  font-size: x-large;
   font-weight: bolder;
   text-align: center;
   padding: 15px;
 }
 .container-black-calender-box .container-p-inputdate .container-p-input input:hover {
   cursor: text;
+}
+.container-black-calender-box .room-bed-num {
+  background-color: #1F1F2C;
+  width: 20%;
+  text-align: center;
+  border: none;
 }
 
 .request-quote-btn-conatiner {
@@ -412,6 +418,7 @@ body {
   display: flex;
   justify-content: center;
   margin: 3% 3%;
+  z-index: 1;
 }
 .request-quote-btn-conatiner .request-quote-btn {
   position: relative;
@@ -835,7 +842,7 @@ body {
 
 .active,
 .dot:hover {
-  background-color: #717171;
+  background-color: #ffffff;
 }
 
 .testimonialContainer {
@@ -1034,6 +1041,57 @@ li {
   color: #498f60;
 }
 
+table {
+  font-family: "Arial";
+  margin: 25px auto;
+  border-collapse: collapse;
+  border: 1px solid #eee;
+  border-bottom: 2px solid #00cccc;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.05), 0px 20px 20px rgba(0, 0, 0, 0.05), 0px 30px 20px rgba(0, 0, 0, 0.05);
+}
+table tr:hover {
+  background: #f4f4f4;
+}
+table tr:hover td {
+  color: #a52626;
+}
+table th, table td {
+  color: #999;
+  border: 1px solid #eee;
+  padding: 12px 35px;
+  border-collapse: collapse;
+}
+table th {
+  background: #00cccc;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+table th.last {
+  border-right: none;
+}
+
+.table-container {
+  z-index: 999999999999 !important;
+}
+
+.myModal {
+  display: none;
+  position: absolute;
+  top: 10% !important;
+  right: 35%;
+  z-index: 1000000000000000300000000;
+}
+
+.close {
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.myModal.active {
+  display: block;
+}
+
 /* remove the list styles, width : item width * total items */
 /* Styling for prev and next buttons */
 html {
@@ -1094,17 +1152,6 @@ body {
 
 .clear {
   clear: both;
-}
-
-.drawer-nav {
-  background: black;
-}
-.drawer-nav ul li {
-  display: inline-block;
-}
-.drawer-nav ul li a {
-  color: #e7e7e7;
-  font-size: smaller;
 }
 
 .vertical-line {

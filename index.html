@@ -4,14 +4,28 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/drawer.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+
     <title>Hotel Xenia</title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
-  <body>
-   
+  <body class="drawer drawer--right">
+    <header role="banner">
+      <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+      </button>
+      <nav class="drawer-nav" role="navigation" >
+        <ul class="drawer-menu" >
+          <li><a class="drawer-brand" href="#">Brand</a></li>
+          <li><a class="drawer-menu-item" href="#">Nav1</a></li>
+          <li><a class="drawer-menu-item" href="#">Nav2</a></li>
+        </ul>
+      </nav>
+    </header>
+<div role="main">
 
     <div id="slider" class="transparent-slider">
       <div class="transparent-menu">
@@ -35,9 +49,12 @@
           <div class="book-now-btn">
             <a href="#">BOOK NOW!</a>
             <div class="book-now-btn-child">
+             
             </div>
           </div>
+
         </div>
+
       
          
       </div>
@@ -53,12 +70,12 @@
           <p class="first-p">INDOOR & OUTDOOR</p>
           <p class="second-p">ENJOY A LUXURY EXPERIENCE</p>
 
-          <!-- <div class="rooms-and-suites-btn-conatiner">
+         <div class="rooms-and-suites-btn-conatiner">
             <div class="rooms-and-suites-btn">
                 <a class="btn-rooms-and-suits" href="#">ROOMS & SUITS</a>
                 <div class="child-rooms-and-suits-slideUp"></div>
             </div>
-            </div> -->
+            </div> 
         </li>
         <li>
           <img
@@ -78,7 +95,8 @@
         </li>
       </ul>
       
-    </div>
+    </div> 
+
 
     <!-- <div class="slider_option">
       <input type="checkbox" id="checkbox" />
@@ -108,15 +126,67 @@
               placeholder="Select Departure Date"
             />
           </div>
+         
         </div>
+        <input class="room-bed-num" type="text" placeholder="Room Number">
+        <input class="room-bed-num" type="text" placeholder="Beds Number">
       </div>
+
+
       <div class="request-quote-btn-conatiner">
-        <div class="request-quote-btn">
-            <a class="btn-req-quote" href="#">REQUEST A QUOTE</a>
+        <div class="request-quote-btn" id="myBtn">
+            <div class="btn-req-quote" type="button">REQUEST A QUOTE</div>
             <div class="child-animation-slideUp"></div>
         </div>
         </div>
     </div>
+    <!--Start modal table inside calender black box-->
+    
+    <div id="modal" class="myModal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="table-container">
+          <table>
+      <thead>
+        <tr>
+          <th>From</th>
+          <th>To</th>
+          <th>Room</th>
+          <th>Bed</th>
+        </tr>
+      </thead>
+      <tbody id="tblbody">
+        <tr>
+          <td>Item</td>
+          <td>Item</td>
+          <td>Item</td>
+          <td>Item</td>
+        </tr>
+         <tr>
+          <td>Item</td>
+          <td>Item</td>
+          <td>Item</td>
+          <td>Item</td>
+        </tr>
+         <tr>
+          <td>Item</td>
+          <td>Item</td>
+          <td>Item</td>
+          <td>Item</td>
+        </tr>
+         <tr>
+          <td>Item</td>
+          <td>Item</td>
+          <td>Item</td>
+          <td>Item</td>
+        </tr>
+      </tbody>
+    </table>
+        </div>
+      </div>
+    </div>
+    
+    <!--End modal table black box inside calender black box -->
     <!--End-black-calender-box-->
 
     <!--Start Welcome Xenia Hotel-->
@@ -675,9 +745,16 @@
       </div>
     </div>
     <!--End footer-->
+  </div>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+    <script src="Assetes/Javascript/jquery.min.js"></script>
+    <script src="Assetes/Javascript/iscroll.min.js"></script>
+    <script src="Assetes/Javascript/drawer.min.js"></script>
     <script type="text/javascript">
+      $(document).ready(function() {
+  $('.drawer').drawer();
+});
       var _gaq = _gaq || [];
       _gaq.push(["_setAccount", "UA-36251023-1"]);
       _gaq.push(["_setDomainName", "jqueryscript.net"]);
@@ -695,6 +772,8 @@
         s.parentNode.insertBefore(ga, s);
       })();
     </script>
+
     <script src="Assetes/Javascript/script.js"></script>
+
   </body>
 </html>

@@ -73,23 +73,64 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "flex";  
   dots[slideIndex-1].className += " active";
 }
-//--------------when scroll animation show again 
+//--------------table jquery
+$('table tr').each(function(){
+  $(this).find('th').first().addClass('first');
+  $(this).find('th').last().addClass('last');
+  $(this).find('td').first().addClass('first');
+  $(this).find('td').last().addClass('last');
+});
+$('table tr').first().addClass('row-first');
+$('table tr').last().addClass('row-last');
+
+//----------------Show table js and Modal 
+
+var modal = document.querySelector(".myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0]; 
+
+btn.addEventListener("click", () => {
+modal.classList.add("active")
+})
+
+// btn.onclick = function() {
+//   modal.style.display = "block";
+// }
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 
+ 
+function ShowtblData(obj){
 
-
-
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-    const firstP = entry.target.querySelectorAll('.first-p');;
-    const secondP = entry.target.querySelectorAll('.second-p');
-      if (entry.isIntersecting) {
-        secondP.classList.add('anim-lineUp');
-        return; // if we added the class, exit the function
-      }
-      // We're not intersecting, so remove the class!
-      secondP.classList.remove('anim-lineUp');
-    });
+let tblid=$("#tblbody");
+tblid.empty();
+let userdate="2020"
+  obj.forEach(el => {
+    tblid.append(`  <tr class="${el.from==userdate && 0==0 ? 'test':''}">
+    <td>${el.from}</td>
+    <td>${el.to}</td>
+    <td>${el.room}</td>
+    <td>${el.bed}</td>
+  </tr>`);
   });
   
-  observer.observe(document.querySelector('.second-p'));
+}
+
+
+$.ajax({
+  type: "GET",
+  url:"/Assetes/JSOn/rooms.json",
+  success: (obj) => {
+     debugger
+    ShowtblData(obj)
+  }
+})
+
+
