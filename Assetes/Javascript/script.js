@@ -1,5 +1,3 @@
-//-----------End owl carousel options
-
 //start drawer hamburger menu
 $(document).ready(function () {
   $('.drawer').drawer()
@@ -14,20 +12,20 @@ $('.drawer').drawer({
     dropdown: 'drawer-dropdown',
   },
   iscroll: {
-    // Configuring the iScroll
-    // https://github.com/cubiq/iscroll#configuring-the-iscroll
+
     mouseWheel: true,
     preventDefault: false,
   },
   showOverlay: true,
 })
 //End drawer hamburger menu
+
 jQuery(document).ready(function ($) {
-  $('#checkbox').change(function () {
+ 
     setInterval(function () {
       moveRight()
-    }, 3000)
-  })
+    }, 4000)
+  
 
   var slideCount = $('#slider ul li').length
   var slideWidth = $('#slider ul li').width()
