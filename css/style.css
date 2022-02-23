@@ -222,6 +222,7 @@ body {
   background-color: #a9f101;
   padding: 7px;
   border: none;
+  margin-left: 0%;
   cursor: pointer;
   width: 130px;
   height: 30px;
@@ -356,6 +357,26 @@ body {
   cursor: pointer;
 }
 
+.drawer-toggle {
+  z-index: 1000000000000000300000000000;
+}
+
+.drawer-nav {
+  z-index: 1000000000000000300000000;
+  background-color: #000000;
+}
+.drawer-nav ul li {
+  position: relative;
+  border: 2px solid yellow;
+}
+.drawer-nav ul li a {
+  color: #fff;
+  font-size: x-large;
+  position: absolute;
+  top: 3%;
+  margin: 8%;
+}
+
 .container-black-calender-box {
   position: absolute;
   top: 15%;
@@ -379,6 +400,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
 }
 .container-black-calender-box .container-p-inputdate .container-p-input {
   height: 100%;
@@ -409,7 +431,14 @@ body {
   background-color: #1F1F2C;
   width: 20%;
   text-align: center;
+  height: 95px;
   border: none;
+  margin-top: 1.5%;
+  font-size: larger;
+  color: white;
+  text-align: center;
+  font-weight: lighter;
+  font-weight: bolder;
 }
 
 .request-quote-btn-conatiner {
@@ -458,6 +487,10 @@ body {
 }
 .btn-req-quote:hover {
   cursor: pointer;
+}
+
+.hilight {
+  background-color: #e2902b;
 }
 
 .welcome-container-box {
@@ -840,11 +873,6 @@ body {
   display: none;
 }
 
-.active,
-.dot:hover {
-  background-color: #ffffff;
-}
-
 .testimonialContainer {
   text-align: center;
   padding: 5%;
@@ -1056,7 +1084,7 @@ table tr:hover td {
   color: #a52626;
 }
 table th, table td {
-  color: #999;
+  color: #111010;
   border: 1px solid #eee;
   padding: 12px 35px;
   border-collapse: collapse;

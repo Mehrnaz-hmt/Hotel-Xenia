@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="Assetes/plugins/Owl carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="Assetes/plugins/Owl carousel/css/owl.theme.default.min.css"> 
     <link rel="stylesheet" href="css/drawer.min.css" />
     <link rel="stylesheet" href="css/style.css" />
 
@@ -70,12 +72,12 @@
           <p class="first-p">INDOOR & OUTDOOR</p>
           <p class="second-p">ENJOY A LUXURY EXPERIENCE</p>
 
-         <div class="rooms-and-suites-btn-conatiner">
+         <!-- <div class="rooms-and-suites-btn-conatiner">
             <div class="rooms-and-suites-btn">
                 <a class="btn-rooms-and-suits" href="#">ROOMS & SUITS</a>
                 <div class="child-rooms-and-suits-slideUp"></div>
             </div>
-            </div> 
+            </div>  -->
         </li>
         <li>
           <img
@@ -128,8 +130,8 @@
           </div>
          
         </div>
-        <input class="room-bed-num" type="text" placeholder="Room Number">
-        <input class="room-bed-num" type="text" placeholder="Beds Number">
+        <input class="room-bed-num" type="text" id="room-num" placeholder="Room Number">
+        <input class="room-bed-num" type="text" placeholder="Beds Number" id="bednum">
       </div>
 
 
@@ -138,7 +140,7 @@
             <div class="btn-req-quote" type="button">REQUEST A QUOTE</div>
             <div class="child-animation-slideUp"></div>
         </div>
-        </div>
+      </div>
     </div>
     <!--Start modal table inside calender black box-->
     
@@ -534,7 +536,8 @@
       </div>
       <div class="slideshow-container">
         <!-- first -->
-        <div class="myTestSlides mySlides">
+        <div class="owl-carousel owl-theme">
+        <div class="item myTestSlides ">
           <div class="imageCircle">
             <img
               class="rounded imageCircle"
@@ -563,7 +566,7 @@
           </div>
         </div>
         <!-- second -->
-        <div class="myTestSlides d-flex space-between mySlides">
+        <div class="item myTestSlides d-flex space-between ">
           <div class="imageCircle">
             <img class="rounded" src="Assetes/images/avatar-2.jpg" alt="" />
           </div>
@@ -586,7 +589,7 @@
           </div>
         </div>
         <!-- third -->
-        <div class="myTestSlides d-flex space-between mySlides">
+        <div class="item myTestSlides d-flex space-between ">
           <div class="imageCircle">
             <img class="rounded" src="Assetes/images/avatar-3.jpg" alt="" />
           </div>
@@ -610,7 +613,7 @@
           </div>
         </div>
         <!-- fourth -->
-        <div class="myTestSlides d-flex space-between mySlides">
+        <div class="item myTestSlides d-flex space-between ">
           <div class="imageCircle">
             <img class="rounded" src="Assetes/images/profile-2.jpg" alt="" />
           </div>
@@ -635,7 +638,7 @@
           </div>
         </div>
         <!-- fifth -->
-        <div class="myTestSlides d-flex space-between mySlides">
+        <div class="item myTestSlides d-flex space-between ">
           <div class="imageCircle">
             <img class="rounded" src="Assetes/images/avatar-4.jpg" alt="" />
           </div>
@@ -659,7 +662,7 @@
           </div>
         </div>
         <!-- sixth -->
-        <div class="myTestSlides d-flex space-between mySlides">
+        <div class="item myTestSlides d-flex space-between ">
           <div class="imageCircle">
             <img class="rounded" src="Assetes/images/profile.jpg" alt="" />
           </div>
@@ -680,18 +683,19 @@
             </div>
           </div>
         </div>
+        </div>
         <!-- endofsixth -->
       </div>
-      <div>
+      <!-- <div>
         <ul class="CarouselNav">
-          <!-- <li class="selectedCarouselNav"></li> -->
+          <li class="selectedCarouselNav"></li>
           <li lass="dot" onclick="currentSlide(1)"></li>
           <li lass="dot" onclick="currentSlide(2)"></li>
           <li lass="dot" onclick="currentSlide(3)"></li>
           <li lass="dot" onclick="currentSlide(4)"></li>
           <li lass="dot" onclick="currentSlide(5)"></li>
         </ul>
-      </div>
+      </div> -->
     </div>
     <!--End testimonials-->
 
@@ -772,7 +776,10 @@
         s.parentNode.insertBefore(ga, s);
       })();
     </script>
-
+   <!-- <script src="Assetes/plugins/Owl carousel/js/jquery-owl.js"></script> -->
+    <script src="Assetes/plugins/Owl carousel/js/owl.carousel.js"></script>
+    <script src="Assetes/plugins/Owl carousel/js/owl.carousel.min.js"></script>
+    <script src="Assetes/plugins/Owl carousel/js/index-owl.js"></script>
     <script src="Assetes/Javascript/script.js"></script>
 
   </body>
